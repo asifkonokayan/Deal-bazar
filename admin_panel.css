@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* CONTAINER */
+.admin-container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* TITLE */
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.card{
+    flex:1;
+    min-width:150px;
+    background:#111;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    border:1px solid #222;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:30px;
+    background:#111;
+}
+
+th,td{
+    padding:10px;
+    border:1px solid #222;
+    font-size:14px;
+}
+
+th{
+    background:#000;
+}
+
+/* BUTTONS */
+.approve{
+    background:#0a3;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.delete{
+    background:#ff3b3b;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.clear{
+    background:orange;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* HOVER */
+.approve:hover{background:#0c5;}
+.delete:hover{background:#e60000;}
+.clear:hover{background:#ff8800;}
+
+/* MOBILE */
+@media(max-width:768px){
+    .stats{
+        flex-direction:column;
+    }
+
+    table{
+        font-size:12px;
+    }
+}

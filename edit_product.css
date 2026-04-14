@@ -1,0 +1,123 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:Arial, sans-serif;
+    background:#0d0d0d;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* CONTAINER */
+.container{
+    width:100%;
+    max-width:500px;
+    background:#111;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+/* TITLE */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#fbf8f8;
+}
+
+/* LABEL */
+label{
+    display:block;
+    margin-top:12px;
+    font-size:14px;
+    color:#ccc;
+}
+
+/* INPUT */
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    background:#000;
+    border:1px solid #333;
+    color:#fff;
+    border-radius:6px;
+    outline:none;
+}
+
+input:focus, textarea:focus{
+    border-color:#ded3d3;
+}
+
+/* TEXTAREA */
+textarea{
+    height:100px;
+    resize:none;
+}
+
+/* IMAGE */
+.preview{
+    width:100px;
+    margin-top:10px;
+    border-radius:8px;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#ff3b3b;
+    border:none;
+    color:#fff;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e60000;
+}
+
+/* BACK BUTTON */
+.back-btn{
+    display:inline-block;
+    margin-bottom:15px;
+    color:#ff4d4d;
+    text-decoration:none;
+    font-size:14px;
+    
+}
+
+/* MOBILE */
+@media(max-width:500px){
+
+    body{
+        align-items:flex-start;
+        padding:15px;
+    }
+
+    .container{
+        padding:18px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    input, textarea{
+        font-size:14px;
+    }
+
+    button{
+        font-size:14px;
+    }
+}

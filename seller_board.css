@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+.header{
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #222;
+}
+
+.container{
+    width:94%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+}
+
+.logo span{
+    color:#ff3b3b;
+}
+
+/* MENU */
+.menu{
+    display:flex;
+    gap:12px;
+    list-style:none;
+}
+
+.menu a{
+    color:#aaa;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.menu a:hover{
+    color:#ff3b3b;
+}
+
+.seller-name{
+    background:#ff3b3b;
+    color:white !important;
+    padding:5px 10px;
+    border-radius:20px;
+}
+
+/* MOBILE MENU */
+.menu-toggle{
+    display:none;
+    font-size:20px;
+}
+
+/* DASHBOARD */
+.dashboard{
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:220px;
+    background:#000;
+    min-height:100vh;
+    padding:20px;
+    border-right:1px solid #222;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:#aaa;
+    text-decoration:none;
+    padding:8px 0;
+    font-size:14px;
+}
+
+.sidebar a:hover{
+    color:#ff3b3b;
+}
+
+/* MAIN */
+.main{
+    flex:1;
+    padding:20px;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.card{
+    flex:1;
+    background:#111;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #222;
+    text-align:center;
+}
+
+.card h3{
+    color:#ff3b3b;
+}
+
+/* PROFILE */
+.profile-box{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    background:#111;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #222;
+}
+
+.profile-box img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 12px;
+    background:#ff3b3b;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.btn:hover{
+    background:#e60000;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    /* DASHBOARD LAYOUT */
+    .dashboard{
+        flex-direction:column;
+    }
+
+    /* SIDEBAR → TOP SCROLL MENU */
+    .sidebar{
+        width:100%;
+        min-height:auto;
+        display:flex;
+        overflow-x:auto;
+        gap:10px;
+        padding:10px;
+        border-right:none;
+        border-bottom:1px solid #222;
+    }
+
+    .sidebar h2{
+        display:none;
+    }
+
+    .sidebar a{
+        white-space:nowrap;
+        padding:8px 12px;
+        background:#111;
+        border-radius:6px;
+        border:1px solid #222;
+        font-size:13px;
+    }
+
+    /* MAIN CONTENT SAME SPACING */
+    .main{
+        padding:15px;
+        width:100%;
+    }
+
+    /* CARD STYLE (dashboard match) */
+    .cards{
+        flex-direction:column;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    /* PROFILE BOX */
+    .profile-box{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    /* FORM (EDIT PROFILE FIX) */
+    .form-box{
+        width:100%;
+        margin-top:15px;
+        padding:15px;
+    }
+
+    form{
+        width:100%;
+    }
+
+    form input,
+    form textarea{
+        width:100%;
+        font-size:14px;
+    }
+
+    /* HEADER MENU */
+    .menu{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        right:10px;
+        top:60px;
+        background:#000;
+        padding:10px;
+        border:1px solid #222;
+        border-radius:6px;
+    }
+
+    .menu.show{
+        display:flex;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:20px;
+        cursor:pointer;
+    }
+}
